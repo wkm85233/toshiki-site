@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>吉澤俊樹 Toshiki Yoshizawa | ベーシスト・ピアニスト・サウンドプロデューサー</title>
+<meta name="description" content="愛知県春日井市を拠点に活動するベーシスト・ピアニスト・サウンドプロデューサー、吉澤俊樹の公式サイト。演奏・制作・レッスンのご依頼を承ります。">
+<meta property="og:title" content="吉澤俊樹 Toshiki Yoshizawa">
+<meta property="og:description" content="ベース・ピアノ・ウクレレの演奏から、楽曲制作、音楽教育まで。東海3県 出張演奏対応。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{
+  --accent:#E0A84F; --accent-hover:#F2C47A;
+  --bg:#111315; --bg2:#16181B; --card:#1D2024; --line:#2A2D31; --line2:#5A5D62;
+  --text:#EDEAE3; --text2:#D6D2C9; --text3:#C9C5BC; --muted:#A9A59C;
+  --latin:'Space Grotesk',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New','Hiragino Sans','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-hover)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{border-bottom:1px solid var(--line)}
+.alt{background:var(--bg2)}
+.pad{padding:104px 0}
+.eyebrow{margin:0;font-family:var(--latin);font-size:13px;letter-spacing:.24em;color:var(--accent)}
+h2{margin:0;font-size:32px;font-weight:700;line-height:1.4}
+p{margin:0}
+
+/* header */
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(17,19,21,.92);backdrop-filter:blur(8px);z-index:10}
+.head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:14px 24px}
+.logo{color:var(--text);font-family:var(--latin);font-weight:700;font-size:18px;letter-spacing:.08em}
+.logo:hover{color:var(--text)}
+nav{display:flex;flex-wrap:wrap;gap:0 24px;font-size:14px}
+nav a{color:var(--text3);padding:10px 0}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.strings{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:28px;padding-left:40%;opacity:.55}
+.strings div{height:1px;background:#3A3D42}
+.strings div:nth-child(3){height:2px;background:var(--accent)}
+.strings div:nth-child(4){height:2px}
+.hero .wrap{position:relative;padding-top:120px;padding-bottom:128px;display:flex;flex-direction:column;gap:28px}
+.hero .eyebrow{font-size:14px}
+h1{margin:0;display:flex;flex-direction:column;gap:4px}
+.name-ja{font-size:clamp(48px,8vw,104px);font-weight:700;line-height:1.1;letter-spacing:.04em}
+.name-en{font-family:var(--latin);font-size:clamp(20px,2.6vw,32px);font-weight:400;color:var(--muted);letter-spacing:.06em}
+.lead{max-width:560px;font-size:18px;color:var(--text2)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:4px;font-weight:700;font-size:16px;font-family:inherit;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:var(--bg)}
+.btn-primary:hover{background:var(--accent-hover);color:var(--bg)}
+.btn-ghost{border:1px solid var(--line2);color:var(--text);background:transparent;font-weight:500}
+.btn-ghost:hover{color:var(--text);border-color:var(--muted)}
+
+/* two-column */
+.split{display:flex;flex-wrap:wrap;gap:48px 72px}
+.split-side{flex:1 1 260px;display:flex;flex-direction:column;gap:8px}
+.split-main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px;color:var(--text2)}
+.photo{margin-top:24px;width:100%;max-width:340px;aspect-ratio:2/3;border:1px dashed var(--line2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.intro{font-size:20px;color:var(--text);font-weight:500}
+
+/* activities */
+.stack{display:flex;flex-direction:column;gap:48px}
+.head-block{display:flex;flex-direction:column;gap:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.act{border-top:2px solid var(--accent);padding-top:24px;display:flex;flex-direction:column;gap:12px}
+.num{font-family:var(--latin);font-size:13px;letter-spacing:.16em;color:var(--muted)}
+h3{margin:0;font-size:22px;font-weight:700;line-height:1.5}
+.act p,.box p{font-size:15px;color:var(--text3)}
+
+/* works */
+.list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.list li{display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.list .k{flex:0 0 140px;color:var(--muted);font-size:14px}
+.list .v{flex:1 1 320px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{padding:6px 16px;border:1px solid var(--line2);border-radius:999px;font-family:var(--latin);font-size:14px;color:var(--text)}
+.tag.hl{border-color:var(--accent)}
+.small{font-size:14px;color:var(--muted)}
+
+/* request */
+.boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.box h3{font-size:20px}
+.box .note{font-size:14px;color:var(--muted)}
+
+/* contact */
+#contact{border-bottom:none}
+.contact{padding:104px 24px 72px;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.contact h2{font-size:clamp(26px,4vw,44px)}
+.form-card{width:100%;max-width:720px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:32px}
+form{display:flex;flex-direction:column;gap:20px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+label{font-size:14px;color:var(--text3)}
+.req{color:var(--accent)}
+input,select,textarea{width:100%;min-height:48px;padding:0 14px;background:var(--bg);border:1px solid var(--line2);border-radius:4px;color:var(--text);font-size:16px;font-family:inherit}
+textarea{padding:12px 14px;line-height:1.7;resize:vertical;min-height:160px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.msg{font-size:14px;min-height:1em}
+.msg.err{color:#F28B82}
+.done{display:none;flex-direction:column;gap:12px;padding:24px 0}
+.done.show{display:flex}
+.done .t{font-size:20px;font-weight:700}
+.links{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;margin-top:8px}
+.links a{padding:10px 0}
+footer{border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:28px 24px;font-size:13px;color:var(--muted)}
+.foot .c{font-family:var(--latin)}
+
+@media (max-width:640px){
+  .pad{padding:72px 0}
+  .hero .wrap{padding-top:80px;padding-bottom:88px}
+  .strings{padding-left:20%}
+  nav{gap:0 16px;font-size:13px}
+  .box,.form-card{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head" style="padding-left:24px;padding-right:24px">
+    <a href="#top" class="logo">TOSHIKI YOSHIZAWA</a>
+    <nav aria-label="メインメニュー">
+      <a href="#about">プロフィール</a>
+      <a href="#activities">活動</a>
+      <a href="#works">実績</a>
+      <a href="#request">ご依頼</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="top" class="hero">
+  <div class="strings" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
+  <div class="wrap">
+    <p class="eyebrow">BASSIST · PIANIST · SOUND PRODUCER · EDUCATOR</p>
+    <h1><span class="name-ja">吉澤 俊樹</span><span class="name-en">Toshiki Yoshizawa</span></h1>
+    <p class="lead">その場所、その時間に、ちょうどいい音楽を。<br>ベース・ピアノ・ウクレレの演奏から、楽曲制作、音楽教育まで。愛知県春日井市を拠点に活動しています。</p>
+    <div class="btns">
+      <a href="#request" class="btn btn-primary">演奏・制作のご依頼</a>
+      <a href="#lesson" class="btn btn-ghost">レッスンについて</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap pad split">
+    <div class="split-side">
+      <p class="eyebrow">PROFILE</p>
+      <h2>プロフィール</h2>
+      <!-- 写真を入れるときは、index.html と同じ場所に profile.jpg を置くだけで表示されます -->
+      <div class="photo" id="photo"><span>[プロフィール写真]</span></div>
+    </div>
+    <div class="split-main">
+      <p class="intro">ベーシスト、ピアニスト、サウンドプロデューサー、作編曲家。</p>
+      <p>名古屋芸術大学卒業。在学中よりホテルのレギュラーバンドを務め、ジャズ・ラテン・ブラックミュージック・ポップス・クラブミュージックを軸に幅広いジャンルで活動。J-POPからシャンソン、昭和歌謡、演歌まで、さまざまなバンドで演奏してきました。</p>
+      <p>ゴスペルの名曲「Oh Happy Day」の初代リードシンガーとしてグラミー賞へと導いたDorothy Morrison、ハービー・ハンコックとの活動で知られるドラマーJames Leviらとのアメリカでのレコーディングに、ベーシスト兼エンジニアとして参加。メジャーレーベルアーティストSILVAの作品のレコーディングにも参加しています。</p>
+      <p>CMやキャラクター、子ども向けの楽曲制作など、制作活動も多岐にわたります。環境に合った音楽を提供するプロデュース力に定評があり、クラブミュージックにも造詣が深い。「アートのためのエンジニアリング」「音楽のTPO」をテーマに、演奏・制作・教育を横断して活動しています。</p>
+      <p>現在は芸術大学でコンピューターを使った音楽制作の講師を務めるほか、Ableton認定トレーナーとしてDTMの指導も行っています。</p>
+    </div>
+  </div>
+</section>
+
+<section id="activities" class="alt">
+  <div class="wrap pad stack">
+    <div class="head-block">
+      <p class="eyebrow">ACTIVITIES</p>
+      <h2>活動</h2>
+    </div>
+    <div class="cards">
+      <div class="act">
+        <p class="num">01 / BASS</p>
+        <h3>ベース演奏</h3>
+        <p>本業はベーシスト。ジャズ・フュージョンのセッションからポップス、ラテン、R&amp;B、ファンクまで。アーティストのサポートやレコーディングにも対応します。</p>
+      </div>
+      <div class="act">
+        <p class="num">02 / PIANO</p>
+        <h3>ピアノ演奏</h3>
+        <p>ホテルのレストランやピアノバーなどでの演奏経験多数。お店の雰囲気やお客様に合わせた、心地よいBGM演奏やリクエスト演奏を得意としています。</p>
+      </div>
+      <div class="act">
+        <p class="num">03 / UKULELE</p>
+        <h3>ウクレレ演奏</h3>
+        <p>ハワイアンを中心としたウクレレ演奏。やわらかな音色で、イベントや施設での演奏にもぴったりです。</p>
+      </div>
+      <div class="act">
+        <p class="num">04 / PRODUCTION</p>
+        <h3>制作・エンジニアリング</h3>
+        <p>作曲・編曲、CMやキャラクター楽曲、ハウス／テクノなどのクラブトラック制作。ミックス・マスタリングも承ります。</p>
+      </div>
+      <div class="act">
+        <p class="num">05 / EDUCATION</p>
+        <h3>音楽教育</h3>
+        <p>芸術大学講師（コンピューター音楽制作、映像・漫画への音づけ、音楽鑑賞）。Ableton認定トレーナー。楽器演奏から作編曲、音楽理論まで指導。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap pad split">
+    <div class="split-side">
+      <p class="eyebrow">WORKS &amp; SKILLS</p>
+      <h2>主な実績・スキル</h2>
+    </div>
+    <div class="split-main" style="gap:40px">
+      <ul class="list">
+        <li><span class="k">レコーディング</span><span class="v">Dorothy Morrison、James Levi らとのゴスペル・レコーディング（ベース／エンジニア）</span></li>
+        <li><span class="k">レコーディング</span><span class="v">メジャーレーベルアーティスト SILVA 作品への参加</span></li>
+        <li><span class="k">ライブ</span><span class="v">ホテルのレギュラーバンド、ホテルレストランでのピアノ演奏、ピアノバー、ライブ・イベント多数</span></li>
+        <li><span class="k">制作</span><span class="v">CM、キャラクター、子ども向け楽曲の制作</span></li>
+        <li><span class="k">教育</span><span class="v">芸術大学講師／Ableton認定トレーナー／音楽専門学校での指導経験</span></li>
+      </ul>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <p class="small">使用ソフト</p>
+        <div class="tags">
+          <span class="tag hl">Ableton Live（認定トレーナー）</span>
+          <span class="tag">Logic Pro</span>
+          <span class="tag">Cubase</span>
+          <span class="tag">Pro Tools</span>
+          <span class="tag">GarageBand</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="request" class="alt">
+  <div class="wrap pad stack">
+    <div class="head-block">
+      <p class="eyebrow">REQUEST</p>
+      <h2>ご依頼について</h2>
+      <p style="color:var(--text3)">東海3県（愛知・岐阜・三重）への出張演奏に対応しています。編成・内容はご相談ください。</p>
+    </div>
+    <div class="boxes">
+      <div class="box">
+        <h3>演奏</h3>
+        <p>レストラン・バーでのBGM演奏、パーティー・イベント、高齢者施設やデイサービスでの音楽レクリエーション。ソロ（ピアノ／ウクレレ）からピアノ＋ベースのデュオまで。</p>
+      </div>
+      <div class="box" id="lesson">
+        <h3>レッスン</h3>
+        <p>DTM（Ableton／Logic ほか）、ベース、ウクレレ、ポップスピアノ、ジャズピアノ、音楽理論、作曲。オンライン・対面どちらも対応します。</p>
+      </div>
+      <div class="box">
+        <h3>制作</h3>
+        <p>作曲・編曲、CM・映像用の楽曲制作、ベースのレコーディング、ミックス・マスタリング。用途とイメージをお聞かせください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <p class="eyebrow">CONTACT</p>
+    <h2>演奏・制作・レッスンのご相談は<br>お気軽にどうぞ。</h2>
+
+    <div class="form-card">
+      <form id="contact-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="cf-name">お名前 <span class="req">*</span></label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" maxlength="100" placeholder="山田 太郎">
+          </div>
+          <div class="field">
+            <label for="cf-email">メールアドレス <span class="req">*</span></label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" maxlength="200" placeholder="example@mail.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-type">ご用件</label>
+          <select id="cf-type" name="type">
+            <option>演奏のご依頼</option>
+            <option>レッスンについて</option>
+            <option>制作のご依頼</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-message">内容 <span class="req">*</span></label>
+          <textarea id="cf-message" name="message" required rows="6" maxlength="5000" placeholder="日時・場所・編成・ご希望など、わかる範囲でご記入ください。"></textarea>
+        </div>
+        <!-- スパム対策（人には見えない欄） -->
+        <div class="hp" aria-hidden="true">
+          <label for="cf-website">ウェブサイト</label>
+          <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="msg" id="cf-msg" role="alert"></p>
+        <button type="submit" class="btn btn-primary" id="cf-submit" style="align-self:flex-start;padding:0 40px;min-height:52px">送信する</button>
+      </form>
+
+      <div class="done" id="cf-done" role="status">
+        <p class="t">送信しました。ありがとうございます。</p>
+        <p style="color:var(--text3)">内容を確認のうえ、ご入力いただいたメールアドレスへ折り返しご連絡いたします。</p>
+        <button type="button" class="btn btn-ghost" id="cf-again" style="align-self:flex-start;min-height:44px;font-size:14px">別のお問い合わせをする</button>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="https://www.ableton.com/ja/certified-training/toshiki-yoshizawa/" target="_blank" rel="noopener">Ableton認定トレーナー紹介ページ</a>
+      <!-- SNSのURLが決まったら、このコメントの外に出して xxxx を書き換えてください
+      <a href="https://xxxx.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+      <a href="https://www.facebook.com/xxxx" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@xxxx" target="_blank" rel="noopener">YouTube</a>
+      -->
+    </div>
+  </div>
+  <footer>
+    <div class="wrap foot">
+      <span>愛知県春日井市拠点／東海3県 出張対応</span>
+      <span class="c">© Toshiki Yoshizawa</span>
+    </div>
+  </footer>
+</section>
+</main>
+
+<script>
+// ▼ お問い合わせの送信先（FormSubmit）
+// 有効化メールに書かれたランダムな文字列に置き換えると、アドレスをソースから隠せます
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/toshipresents@gmail.com';
+
+// プロフィール写真：profile.jpg があれば表示
+(function(){
+  const box = document.getElementById('photo');
+  const img = new Image();
+  img.alt = '吉澤俊樹のプロフィール写真';
+  img.onload = function(){ box.innerHTML = ''; box.style.border = 'none'; box.appendChild(img); };
+  img.src = 'profile.jpg';
+})();
+
+// お問い合わせフォーム
+(function(){
+  const form = document.getElementById('contact-form');
+  const msg = document.getElementById('cf-msg');
+  const btn = document.getElementById('cf-submit');
+  const done = document.getElementById('cf-done');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    msg.textContent = ''; msg.className = 'msg';
+    const f = form.elements;
+    const name = f.namedItem('name').value.trim();
+    const email = f.namedItem('email').value.trim();
+    const message = f.namedItem('message').value.trim();
+    if(!name || !email || !message){
+      msg.textContent = 'お名前・メールアドレス・内容をご入力ください。'; msg.className = 'msg err'; return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      msg.textContent = 'メールアドレスの形式をご確認ください。'; msg.className = 'msg err'; return;
+    }
+    btn.disabled = true; btn.textContent = '送信中…';
+    try{
+      const type = f.namedItem('type').value;
+      const res = await fetch(FORM_ENDPOINT, {
+        method:'POST',
+        headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
+        body: JSON.stringify({
+          'お名前': name,
+          'メールアドレス': email,
+          'ご用件': type,
+          '内容': message,
+          _replyto: email,
+          _subject: '【公式サイト】' + type + '：' + name + ' 様',
+          _template: 'table',
+          _captcha: 'false',
+          _honey: f.namedItem('website').value
+        })
+      });
+      if(!res.ok) throw new Error('send failed');
+      form.reset();
+      form.style.display = 'none';
+      done.classList.add('show');
+    }catch(err){
+      msg.textContent = '送信できませんでした。時間をおいて再度お試しください。'; msg.className = 'msg err';
+    }finally{
+      btn.disabled = false; btn.textContent = '送信する';
+    }
+  });
+
+  document.getElementById('cf-again').addEventListener('click', function(){
+    done.classList.remove('show');
+    form.style.display = '';
+  });
+})();
+</script>
+</body>
+</html>
