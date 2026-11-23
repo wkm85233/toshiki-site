@@ -324,9 +324,8 @@ footer{border-top:1px solid var(--line)}
 </main>
 
 <script>
-// ▼ お問い合わせの送信先（FormSubmit）
-// 有効化メールに書かれたランダムな文字列に置き換えると、アドレスをソースから隠せます
-const FORM_ENDPOINT = 'https://formsubmit.co/ajax/toshipresents@gmail.com';
+// ▼ お問い合わせの送信先（Google Apps Script ウェブアプリ）
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxohT_clH0jc7hdCBmItEwJySs4sP6YITi12wyQjigzVCdsyNk6z1WuEp2ZopnoGbFdqw/exec';
 
 // プロフィール写真：profile.jpg があれば表示
 (function(){
@@ -359,23 +358,8 @@ const FORM_ENDPOINT = 'https://formsubmit.co/ajax/toshipresents@gmail.com';
     }
     btn.disabled = true; btn.textContent = '送信中…';
     try{
-      const type = f.namedItem('type').value;
-      const res = await fetch(FORM_ENDPOINT, {
-        method:'POST',
-        headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
-        body: JSON.stringify({
-          'お名前': name,
-          'メールアドレス': email,
-          'ご用件': type,
-          '内容': message,
-          _replyto: email,
-          _subject: '【公式サイト】' + type + '：' + name + ' 様',
-          _template: 'table',
-          _captcha: 'false',
-          _honey: f.namedItem('website').value
-        })
-      });
-      if(!res.ok) throw new Error('send failed');
+      const body = new URLSearchParams(new FormData(form));
+      await fetch(GAS_URL, { method:'POST', mode:'no-cors', body: body });
       form.reset();
       form.style.display = 'none';
       done.classList.add('show');
